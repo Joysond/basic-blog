@@ -1,0 +1,61 @@
+2020-11-06T13:03:39.4064157Z stdout F 
+2020-11-06T13:03:39.4064157Z stdout F   .   ____          _            __ _ _
+2020-11-06T13:03:39.4074337Z stdout F  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2020-11-06T13:03:39.4074337Z stdout F ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2020-11-06T13:03:39.408433Z stdout F  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2020-11-06T13:03:39.408433Z stdout F   '  |____| .__|_| |_|_| |_\__, | / / / /
+2020-11-06T13:03:39.4094236Z stdout F  =========|_|==============|___/=/_/_/_/
+2020-11-06T13:03:39.4327968Z stdout F  :: Spring Boot ::        (v2.3.2.RELEASE)
+2020-11-06T13:03:39.4327968Z stdout F 
+2020-11-06T13:03:40.1302057Z stdout F 2020-11-06 13:03:40.120  INFO 16 --- [           main] com.rp.cloud.RpCloudApplication          : Starting RpCloudApplication v0.0.1-SNAPSHOT on localhost with PID 16 (/rp-cloud.jar started by root in /)
+2020-11-06T13:03:40.1332109Z stdout F 2020-11-06 13:03:40.131  INFO 16 --- [           main] com.rp.cloud.RpCloudApplication          : No active profile set, falling back to default profiles: default
+2020-11-06T13:03:47.3942165Z stdout F 2020-11-06 13:03:47.390  INFO 16 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-11-06T13:03:47.4792685Z stdout F 2020-11-06 13:03:47.478  INFO 16 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06T13:03:47.4792685Z stdout F 2020-11-06 13:03:47.478  INFO 16 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-06T13:03:47.7516098Z stdout F 2020-11-06 13:03:47.749  INFO 16 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-06T13:03:47.7516098Z stdout F 2020-11-06 13:03:47.749  INFO 16 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7306 ms
+2020-11-06T13:03:48.5744702Z stdout F 2020-11-06 13:03:48.573  WARN 16 --- [           main] org.mongodb.driver.uri                   : Unsupported option 'retrywrites' in the connection string 'mongodb://researchportal-db:rWNfcYwatkA5pkpLikqM9tNIO3yx78Lv8ru7FfcUc69sxDg6OeSalsZFrTje1ICLw0qbBVniNOSpG88aiJwW2A==@researchportal-db.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@researchportal-db@'.
+2020-11-06T13:03:49.6301875Z stdout F 2020-11-06 13:03:49.629  INFO 16 --- [           main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[researchportal-db.mongo.cosmos.azure.com:10255], mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500, requiredReplicaSetName='globaldb'}
+2020-11-06T13:03:49.6301875Z stdout F 2020-11-06 13:03:49.630  INFO 16 --- [           main] org.mongodb.driver.cluster               : Adding discovered server researchportal-db.mongo.cosmos.azure.com:10255 to client view of cluster
+2020-11-06T13:03:52.9567914Z stdout F 2020-11-06 13:03:52.958  INFO 16 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06T13:03:54.1232107Z stdout F 2020-11-06 13:03:54.122  WARN 16 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is java.lang.IllegalStateException: No group.id found in consumer config, container properties, or @KafkaListener annotation; a group.id is required when group management is used.
+2020-11-06T13:03:54.1292217Z stdout F 2020-11-06 13:03:54.128  INFO 16 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-06T13:03:54.1714162Z stdout F 2020-11-06 13:03:54.169  INFO 16 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-06T13:03:54.2124002Z stdout F 2020-11-06 13:03:54.211  INFO 16 --- [           main] ConditionEvaluationReportLoggingListener : 
+2020-11-06T13:03:54.2124002Z stdout F 
+2020-11-06T13:03:54.2124002Z stdout F Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-06T13:03:54.2239769Z stdout F 2020-11-06 13:03:54.222 ERROR 16 --- [           main] o.s.boot.SpringApplication               : Application run failed
+2020-11-06T13:03:54.2239769Z stdout F 
+2020-11-06T13:03:54.2239769Z stdout F org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.kafka.config.internalKafkaListenerEndpointRegistry'; nested exception is java.lang.IllegalStateException: No group.id found in consumer config, container properties, or @KafkaListener annotation; a group.id is required when group management is used.
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) [spring-boot-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) [spring-boot-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.3.2.RELEASE.jar!/:2.3.2.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at com.rp.cloud.RpCloudApplication.main(RpCloudApplication.java:17) [classes!/:0.0.1-SNAPSHOT]
+2020-11-06T13:03:54.2239769Z stdout F 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_265]
+2020-11-06T13:03:54.2239769Z stdout F 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_265]
+2020-11-06T13:03:54.2239769Z stdout F 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_265]
+2020-11-06T13:03:54.2239769Z stdout F 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_265]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) [rp-cloud.jar:0.0.1-SNAPSHOT]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:109) [rp-cloud.jar:0.0.1-SNAPSHOT]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) [rp-cloud.jar:0.0.1-SNAPSHOT]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88) [rp-cloud.jar:0.0.1-SNAPSHOT]
+2020-11-06T13:03:54.2239769Z stdout F Caused by: java.lang.IllegalStateException: No group.id found in consumer config, container properties, or @KafkaListener annotation; a group.id is required when group management is used.
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.util.Assert.state(Assert.java:76) ~[spring-core-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.kafka.listener.AbstractMessageListenerContainer.checkGroupId(AbstractMessageListenerContainer.java:397) ~[spring-kafka-2.5.4.RELEASE.jar!/:2.5.4.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.kafka.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:333) ~[spring-kafka-2.5.4.RELEASE.jar!/:2.5.4.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.startIfNecessary(KafkaListenerEndpointRegistry.java:312) ~[spring-kafka-2.5.4.RELEASE.jar!/:2.5.4.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.kafka.config.KafkaListenerEndpointRegistry.start(KafkaListenerEndpointRegistry.java:257) ~[spring-kafka-2.5.4.RELEASE.jar!/:2.5.4.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182) ~[spring-context-5.2.8.RELEASE.jar!/:5.2.8.RELEASE]
+2020-11-06T13:03:54.2239769Z stdout F 	... 22 common frames omitted
+2020-11-06T13:03:54.2239769Z stdout F 
