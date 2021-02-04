@@ -5,3 +5,13 @@ ErrorCode: RequestDisallowedByPolicy
 Target: GatewayIp
 ErrorMessage: Resource 'GatewayIp' was disallowed by policy. Policy identifiers: '[{"policyAssignment":{"name":"Prevent assigning public IPs to Virtual machines","id":"/providers/Microsoft.Management/managementGroups/GlobalInnovationLab-Root/providers/Microsoft.Authorization/policyAssignments/e81cc71314484f7583b9b90c"},"policyDefinition":{"name":"Prevent assigning public IPs to Virtual machines","id":"/providers/Microsoft.Management/managementGroups/GlobalInnovationLab-Root/providers/Microsoft.Authorization/policyDefinitions/0ff4af2f-d0a0-4fe2-b5c5-5136d9ce5ca6"}}]'.
 OperationID : c57d7404-22c7-43fb-acf8-b1520f4289c9
+
+
+
+{
+    "status": "Failed",
+    "error": {
+        "code": "RequestDisallowedByPolicy",
+        "message": "Deployments failed due to policy violation: 'Resource 'publicIpgateway-f3a266b5f65c41e59c1497b8569fadfd' was disallowed by policy. Policy identifiers: '[{\"policyAssignment\":{\"name\":\"Prevent assigning public IPs to Virtual machines\",\"id\":\"/providers/Microsoft.Management/managementGroups/GlobalInnovationLab-Root/providers/Microsoft.Authorization/policyAssignments/e81cc71314484f7583b9b90c\"},\"policyDefinition\":{\"name\":\"Prevent assigning public IPs to Virtual machines\",\"id\":\"/providers/Microsoft.Management/managementGroups/GlobalInnovationLab-Root/providers/Microsoft.Authorization/policyDefinitions/0ff4af2f-d0a0-4fe2-b5c5-5136d9ce5ca6\"}}]'.'"
+    }
+}
