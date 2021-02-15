@@ -23,3 +23,14 @@ OperationID : c57d7404-22c7-43fb-acf8-b1520f4289c9
         "message": "Unable to connect to cluster management endpoint. Please retry later."
     }
 }
+
+{
+  "code": "DeploymentFailed",
+  "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/DeployOperations for usage details.",
+  "details": [
+    {
+      "code": "BadRequest",
+      "message": "The security rules in the Network Security Group '/subscriptions/fa3989a2-0184-4cdc-a1d4-ccb474f86e53/resourceGroups/msresearchcloud/providers/Microsoft.Network/networkSecurityGroups/researchkafka' configured with subnet '/subscriptions/fa3989a2-0184-4cdc-a1d4-ccb474f86e53/resourceGroups/infrastructure/providers/Microsoft.Network/virtualNetworks/default/subnets/default-4' does not allow required inbound and/or outbound connectivity. For more information please visit https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/hdinsight-troubleshoot-invalidnetworksecuritygroupsecurityrules-cluster-creation-fails. or contact support"
+    }
+  ]
+}
