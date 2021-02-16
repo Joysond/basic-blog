@@ -34,3 +34,21 @@ OperationID : c57d7404-22c7-43fb-acf8-b1520f4289c9
     }
   ]
 }
+
+I tried creating the kafka cluster again today and I am getting the same error.
+{
+"code": "DeploymentFailed",
+"message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/DeployOperations for usage details.",
+"details": [
+{
+"code": "FailedToConnectWithClusterErrorCode",
+"message": "Unable to connect to cluster management endpoint. Please retry later."
+}
+]
+}
+
+I have been getting this same error for a while now. Tried to create around 4-5 clusters till now and the result is the same exception.
+
+vnet: default
+subnet: default-4
+cluster name: kafkaresearch
